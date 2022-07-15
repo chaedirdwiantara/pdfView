@@ -61,7 +61,7 @@ const App = () => {
                 <div id="invoice_header">
                   <table border="0" style="width: 100%" class="header">
                     <tr>
-                      <td>
+                      <td style="width: 50%">
                         <img
                           src="https://images.sinbad.co.id/ng-ecom-invoice/sinbad-logo.png"
                           width="20%"
@@ -174,7 +174,7 @@ const App = () => {
                 </div>
                 <!-- Footer Component -->
                 <div id="invoice_footer">
-                  <table border="0" style="width: 100%; height: 100%">
+                  <table border="0" style="width: 100%">
                     <tr>
                       <td style="width: 28%; text-align: left">Order ID: SE1234567</td>
                       <td style="width: 28%; text-align: right">Halaman 1 dari 1</td>
@@ -280,7 +280,7 @@ const App = () => {
                 </div>
               </div>
               <!-- END OF PAGE 2 EXAMPLE -->
-              <p style="page-break-after: always">&nbsp;</p>
+              <!-- <p style="page-break-after: always">&nbsp;</p> -->
             </div>
           </body>
         
@@ -311,6 +311,8 @@ const App = () => {
             #invoice_footer {
               flex: 1;
               /* background-color: rgb(24, 87, 66); */
+              display: flex;
+              flex-direction: column;
               justify-content: flex-end;
             }
         
