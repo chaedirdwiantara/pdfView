@@ -57,7 +57,8 @@ const App = () => {
           <body id="main">
             <div id="container">
               <div id="invoice_container">
-                <div>
+                <!-- Header Component -->
+                <div id="invoice_header">
                   <table border="0" style="width: 100%" class="header">
                     <tr>
                       <td>
@@ -82,6 +83,9 @@ const App = () => {
                       </td>
                     </tr>
                   </table>
+                </div>
+                <!-- Body Component -->
+                <div id="invoice_body">
                   <table
                     border="0"
                     style="width: 100%"
@@ -113,63 +117,64 @@ const App = () => {
                       <td id="invoicePrice">Rp. 1650000</td>
                     </tr>
                   </table>
+                  <div>
+                    <table border="0" style="width: 100%" class="invoice_header">
+                      <tr style="text-align: center; background-color: #e6e6e6">
+                        <td colspan="6">Invoice</td>
+                      </tr>
+                      <tr>
+                        <td style="width: 28%">Parcel ID:</td>
+                        <td>:</td>
+                        <td style="width: 20%">SE1234567</td>
+                        <td style="width: 28%">Order ID</td>
+                        <td>:</td>
+                        <td style="width: 20%">SNE-1234567</td>
+                      </tr>
+                      <tr>
+                        <td style="width: 28%">Tanggal Terbit</td>
+                        <td>:</td>
+                        <td style="width: 20%">01/01/2022</td>
+                        <td style="width: 28%">Metore Pembayaran</td>
+                        <td>:</td>
+                        <td style="width: 20%">Mandiri Virtual Account</td>
+                      </tr>
+                      <tr>
+                        <td style="width: 28%">Tanggal Pesanan</td>
+                        <td>:</td>
+                        <td style="width: 20%">01/01/2022</td>
+                        <td style="width: 28%">Tanggal Pembayaran</td>
+                        <td>:</td>
+                        <td style="width: 20%">01/01/2022</td>
+                      </tr>
+                      <tr>
+                        <td style="width: 28%">Diterbitkan Mewakili :</td>
+                        <td>:</td>
+                        <td>&nbsp;</td>
+                        <td style="width: 28%">Penerima :</td>
+                        <td>:</td>
+                        <td>&nbsp;</td>
+                      </tr>
+                      <tr>
+                        <td colspan="3" style="width: 28%">PT. Tigaraksa Satria Tbk</td>
+                        <td colspan="3" style="width: 28%">Buyer Name</td>
+                      </tr>
+                      <tr>
+                        <td colspan="3" style="width: 28%; padding: 10px 10px 10px 0px">
+                          Graha Sucofindo Lantai 9, 13, 14, 15, D, Jl. Pasar Minggu,
+                          RT.4/RW.1, Pancoran, Kec. Pancoran, Kota Jakarta Selatan,
+                          Daerah Khusus Ibukota Jakarta 1278
+                        </td>
+                        <td colspan="3" style="width: 28%">
+                          Jl. M.H. Thamrin No. 1, Kb. Melati, Kec. Menteng, Kota Jakarta
+                          Pusat, Daerah Khusus Ibukota Jakarta 10310
+                        </td>
+                      </tr>
+                    </table>
+                  </div>
                 </div>
-                <div id="invoice_body">
-                  <table border="0" style="width: 100%" class="invoice_header">
-                    <tr style="text-align: center; background-color: #e6e6e6">
-                      <td colspan="6">Invoice</td>
-                    </tr>
-                    <tr>
-                      <td style="width: 28%">Parcel ID:</td>
-                      <td>:</td>
-                      <td style="width: 20%">SE1234567</td>
-                      <td style="width: 28%">Order ID</td>
-                      <td>:</td>
-                      <td style="width: 20%">SNE-1234567</td>
-                    </tr>
-                    <tr>
-                      <td style="width: 28%">Tanggal Terbit</td>
-                      <td>:</td>
-                      <td style="width: 20%">01/01/2022</td>
-                      <td style="width: 28%">Metore Pembayaran</td>
-                      <td>:</td>
-                      <td style="width: 20%">Mandiri Virtual Account</td>
-                    </tr>
-                    <tr>
-                      <td style="width: 28%">Tanggal Pesanan</td>
-                      <td>:</td>
-                      <td style="width: 20%">01/01/2022</td>
-                      <td style="width: 28%">Tanggal Pembayaran</td>
-                      <td>:</td>
-                      <td style="width: 20%">01/01/2022</td>
-                    </tr>
-                    <tr>
-                      <td style="width: 28%">Diterbitkan Mewakili :</td>
-                      <td>:</td>
-                      <td>&nbsp;</td>
-                      <td style="width: 28%">Penerima :</td>
-                      <td>:</td>
-                      <td>&nbsp;</td>
-                    </tr>
-                    <tr>
-                      <td colspan="3" style="width: 28%">PT. Tigaraksa Satria Tbk</td>
-                      <td colspan="3" style="width: 28%">Buyer Name</td>
-                    </tr>
-                    <tr>
-                      <td colspan="3" style="width: 28%; padding: 10px 10px 10px 0px">
-                        Graha Sucofindo Lantai 9, 13, 14, 15, D, Jl. Pasar Minggu,
-                        RT.4/RW.1, Pancoran, Kec. Pancoran, Kota Jakarta Selatan, Daerah
-                        Khusus Ibukota Jakarta 1278
-                      </td>
-                      <td colspan="3" style="width: 28%">
-                        Jl. M.H. Thamrin No. 1, Kb. Melati, Kec. Menteng, Kota Jakarta
-                        Pusat, Daerah Khusus Ibukota Jakarta 10310
-                      </td>
-                    </tr>
-                  </table>
-                </div>
+                <!-- Footer Component -->
                 <div id="invoice_footer">
-                  <table border="0" style="width: 100%">
+                  <table border="0" style="width: 100%; height: 100%">
                     <tr>
                       <td style="width: 28%; text-align: left">Order ID: SE1234567</td>
                       <td style="width: 28%; text-align: right">Halaman 1 dari 1</td>
@@ -178,8 +183,10 @@ const App = () => {
                 </div>
               </div>
               <p style="page-break-after: always">&nbsp;</p>
+              <!-- PAGE 2 EXAMPLE -->
               <div id="invoice_container">
-                <div>
+                <!-- Header Component -->
+                <div id="invoice_header">
                   <table border="0" style="width: 100%" class="header">
                     <tr>
                       <td>
@@ -205,62 +212,66 @@ const App = () => {
                     </tr>
                   </table>
                 </div>
+                <!-- Body Component -->
                 <div id="invoice_body">
-                  <table border="0" style="width: 100%" class="invoice_header">
-                    <tr style="text-align: center; background-color: #e6e6e6">
-                      <td colspan="6">Invoice</td>
-                    </tr>
-                    <tr>
-                      <td style="width: 28%">Parcel ID:</td>
-                      <td>:</td>
-                      <td style="width: 20%">SE1234567</td>
-                      <td style="width: 28%">Order ID</td>
-                      <td>:</td>
-                      <td style="width: 20%">SNE-1234567</td>
-                    </tr>
-                    <tr>
-                      <td style="width: 28%">Tanggal Terbit</td>
-                      <td>:</td>
-                      <td style="width: 20%">01/01/2022</td>
-                      <td style="width: 28%">Metore Pembayaran</td>
-                      <td>:</td>
-                      <td style="width: 20%">Mandiri Virtual Account</td>
-                    </tr>
-                    <tr>
-                      <td style="width: 28%">Tanggal Pesanan</td>
-                      <td>:</td>
-                      <td style="width: 20%">01/01/2022</td>
-                      <td style="width: 28%">Tanggal Pembayaran</td>
-                      <td>:</td>
-                      <td style="width: 20%">01/01/2022</td>
-                    </tr>
-                    <tr>
-                      <td style="width: 28%">Diterbitkan Mewakili :</td>
-                      <td>:</td>
-                      <td>&nbsp;</td>
-                      <td style="width: 28%">Penerima :</td>
-                      <td>:</td>
-                      <td>&nbsp;</td>
-                    </tr>
-                    <tr>
-                      <td colspan="3" style="width: 28%">PT. Tigaraksa Satria Tbk</td>
-                      <td colspan="3" style="width: 28%">Buyer Name</td>
-                    </tr>
-                    <tr>
-                      <td colspan="3" style="width: 28%; padding: 10px 10px 10px 0px">
-                        Graha Sucofindo Lantai 9, 13, 14, 15, D, Jl. Pasar Minggu,
-                        RT.4/RW.1, Pancoran, Kec. Pancoran, Kota Jakarta Selatan, Daerah
-                        Khusus Ibukota Jakarta 1278
-                      </td>
-                      <td colspan="3" style="width: 28%">
-                        Jl. M.H. Thamrin No. 1, Kb. Melati, Kec. Menteng, Kota Jakarta
-                        Pusat, Daerah Khusus Ibukota Jakarta 10310
-                      </td>
-                    </tr>
-                  </table>
+                  <div>
+                    <table border="0" style="width: 100%" class="invoice_header">
+                      <tr style="text-align: center; background-color: #e6e6e6">
+                        <td colspan="6">Invoice</td>
+                      </tr>
+                      <tr>
+                        <td style="width: 28%">Parcel ID:</td>
+                        <td>:</td>
+                        <td style="width: 20%">SE1234567</td>
+                        <td style="width: 28%">Order ID</td>
+                        <td>:</td>
+                        <td style="width: 20%">SNE-1234567</td>
+                      </tr>
+                      <tr>
+                        <td style="width: 28%">Tanggal Terbit</td>
+                        <td>:</td>
+                        <td style="width: 20%">01/01/2022</td>
+                        <td style="width: 28%">Metore Pembayaran</td>
+                        <td>:</td>
+                        <td style="width: 20%">Mandiri Virtual Account</td>
+                      </tr>
+                      <tr>
+                        <td style="width: 28%">Tanggal Pesanan</td>
+                        <td>:</td>
+                        <td style="width: 20%">01/01/2022</td>
+                        <td style="width: 28%">Tanggal Pembayaran</td>
+                        <td>:</td>
+                        <td style="width: 20%">01/01/2022</td>
+                      </tr>
+                      <tr>
+                        <td style="width: 28%">Diterbitkan Mewakili :</td>
+                        <td>:</td>
+                        <td>&nbsp;</td>
+                        <td style="width: 28%">Penerima :</td>
+                        <td>:</td>
+                        <td>&nbsp;</td>
+                      </tr>
+                      <tr>
+                        <td colspan="3" style="width: 28%">PT. Tigaraksa Satria Tbk</td>
+                        <td colspan="3" style="width: 28%">Buyer Name</td>
+                      </tr>
+                      <tr>
+                        <td colspan="3" style="width: 28%; padding: 10px 10px 10px 0px">
+                          Graha Sucofindo Lantai 9, 13, 14, 15, D, Jl. Pasar Minggu,
+                          RT.4/RW.1, Pancoran, Kec. Pancoran, Kota Jakarta Selatan,
+                          Daerah Khusus Ibukota Jakarta 1278
+                        </td>
+                        <td colspan="3" style="width: 28%">
+                          Jl. M.H. Thamrin No. 1, Kb. Melati, Kec. Menteng, Kota Jakarta
+                          Pusat, Daerah Khusus Ibukota Jakarta 10310
+                        </td>
+                      </tr>
+                    </table>
+                  </div>
                 </div>
+                <!-- Footer Component -->
                 <div id="invoice_footer">
-                  <table border="0" style="width: 100%">
+                  <table border="0" style="width: 100%; height: 100%">
                     <tr>
                       <td style="width: 28%; text-align: left">Order ID: SE1234567</td>
                       <td style="width: 28%; text-align: right">Halaman 1 dari 1</td>
@@ -268,41 +279,39 @@ const App = () => {
                   </table>
                 </div>
               </div>
+              <!-- END OF PAGE 2 EXAMPLE -->
+              <p style="page-break-after: always">&nbsp;</p>
             </div>
-            <p style="page-break-after: always">&nbsp;</p>
-            <p>haiii</p>
           </body>
         
           <!-- STYLE -->
           <style>
-            * {
-              margin: 0;
-              padding: 0;
-              box-sizing: border-box;
-            }
             #container {
-              display: flex;
-              flex-direction: column;
-              justify-content: space-evenly;
               padding: 16px 16px 16px 16px;
             }
             #invoice_container {
               width: 100%;
-              /* height: 50vh; */
-              /* background-color: yellow; */
+              height: 100vh;
               display: flex;
               flex-direction: column;
               justify-content: space-between;
             }
+            #invoice_header {
+              flex: 1.5;
+              /* background-color: beige; */
+            }
             #invoice_body {
+              flex: 7.5;
               background-image: url('https://images.sinbad.co.id/ng-ecom-invoice/belum-dibayar.png');
               background-repeat: no-repeat;
               background-size: contain;
               background-position: center;
-              padding-bottom: 100px;
+              /* background-color: rgb(162, 243, 56); */
             }
             #invoice_footer {
-              /* margin-top: 100px; */
+              flex: 1;
+              /* background-color: rgb(24, 87, 66); */
+              justify-content: flex-end;
             }
         
             #watermark {
@@ -341,7 +350,6 @@ const App = () => {
             }
           </style>
         </html>
-        
         `,
         //File Name
         fileName: 'test',
