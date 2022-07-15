@@ -287,11 +287,11 @@ const App = () => {
           <!-- STYLE -->
           <style>
             #container {
-              padding: 16px 16px 16px 16px;
+              padding: 0px 16px 0px 16px;
             }
             #invoice_container {
               width: 100%;
-              height: 100vh;
+              height: 95vh;
               display: flex;
               flex-direction: column;
               justify-content: space-between;
@@ -301,7 +301,7 @@ const App = () => {
               /* background-color: beige; */
             }
             #invoice_body {
-              flex: 7.5;
+              flex: 7;
               background-image: url('https://images.sinbad.co.id/ng-ecom-invoice/belum-dibayar.png');
               background-repeat: no-repeat;
               background-size: contain;
